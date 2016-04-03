@@ -17,3 +17,6 @@ Open Hain and type
 ```
 /dash query
 ```
+
+# License
+This plugin is modified from [hain-plugin-google](https://github.com/leonardosnt/hain-plugin-google) by [leonardosnt](https://github.com/leonardosnt) and is under MIT license.
