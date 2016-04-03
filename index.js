@@ -2,6 +2,7 @@
 
 module.exports = (pluginContext) => {
   const shell = pluginContext.shell
+  const app = pluginContext.app
 
   function search (query, res) {
     const query_trim = query.trim()
@@ -12,17 +13,18 @@ module.exports = (pluginContext) => {
 
     res.add({
       id: query_trim,
-      payload: 'open',
+      payload: 'search',
       title: query_trim,
-      desc: 'Search on Google.com'
+      desc: 'Search docsets'
     })
   }
 
   function execute (id, payload) {
-    if (payload !== 'open') {
+    if (payload !== 'search') {
       return
     }
-    shell.openExternal(`http://www.google.com/search?q=${id}`)
+    shell.openExternal(`dash://${id}`)
+    app.close()
   }
 
   return { search, execute }

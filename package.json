@@ -1,21 +1,21 @@
 {
-  "name": "hain-plugin-google",
-  "version": "1.0.3",
-  "description": "A simple google search plugin for Hain",
+  "name": "hain-plugin-dash",
+  "version": "0.0.1",
+  "description": "A simple Dash docsets search plugin for Hain modified from hain-plugin-google",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonardosnt/hain-plugin-google.git"
+    "url": "git+https://github.com/perqin/hain-plugin-dash.git"
   },
   "keywords": [
     "hain0"
   ],
-  "author": "Leonardosnt",
+  "author": "Perqin",
   "license": "MIT",
   "hain": {
-    "prefix": "/g ",
-    "usage": "/g something",
-    "icon": "#fa fa-google",
-    "redirect": "/g "
+    "prefix": "/dash ",
+    "usage": "/dash query",
+    "icon": "#fa fa-search",
+    "redirect": "/dash "
   }
 }
